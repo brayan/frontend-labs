@@ -1,0 +1,7 @@
+{
+  "name": "figma-labs",
+  "id": "982696229040883350",
+  "api": "1.0.0",
+  "main": "src/code.js",
+  "ui": "ui.html"
+}
