@@ -1,8 +1,6 @@
 const CHARACTER_ID = "character"
 const BLOCK_ID = "block"
-
 const ANIMATE_CLASS = "animate"
-
 const JUMP_TIMEOUT_IN_MILLIS = 500
 
 const character = document.getElementById(CHARACTER_ID)
@@ -32,7 +30,6 @@ function onFinishJumping() {
 function checkIfIsDead() {
   const characterStyle = window.getComputedStyle(character)
   const blockStyle = window.getComputedStyle(block)
-
   const characterTop = parseInt(characterStyle.getPropertyValue("top"))
   const blockLeft = parseInt(blockStyle.getPropertyValue("left"))
 
@@ -40,6 +37,6 @@ function checkIfIsDead() {
     block.style.animation = "none"
     block.style.display = "none"
 
-    alert("You lose :(")
+    alert("You lose!")
   }
 }
